@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    // Override our default settings just for this directory
+    "eqeqeq": "warn", // generate a warning if it detects that the == or != operators are being used instead of === or !==
+    "strict": "off",
+    //This rule enforces the use of strict mode in JavaScript code. When enabled, it requires that the "use strict" directive
+    //is included at the beginning of each script or function. In this configuration, the rule is turned off, meaning that
+    // strict mode is not enforced.
+    "import/no-extraneous-dependencies": "off",
+    //This rule is part of the eslint-plugin-import package and checks whether imported modules are declared as dependencies
+    //in the project's package.json file. If an imported module is not listed as a dependency, this rule generates an error or warning.
+    //In this configuration, the rule is turned off.
+    "import/prefer-default-export": "off",
+    //This rule is also part of the eslint-plugin-import package and encourages the use of default exports for modules that have
+    // only one export. When enabled, this rule generates a warning if a named export is used instead of a default export for such modules.
+    //In this configuration, the rule is turned off.
+    "no-underscore-dangle": "off",
+    //This rule is part of the eslint package and flags the use of underscores in variable and function names. In JavaScript convention,
+    //underscores in names are typically used to indicate private or internal variables/functions that are not meant to be accessed from
+    //outside the module. This rule generates an error or warning when such underscores are used in names that do not meet the specified
+    //criteria. In this configuration, the rule is turned off.
+    "no-restricted-globals": "off"
+    //This rule is also part of the eslint package and flags the use of certain global variables that are considered unsafe or can cause
+    //unexpected behavior in JavaScript code. In this configuration, the rule is turned off, meaning that all global variables can be used
+    //without restriction.
+  }
+}
